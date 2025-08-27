@@ -2,11 +2,11 @@
   <img src="[LINK_TO_YOUR_BANNER_IMAGE.PNG]" width="800" alt="Banner Image">
 </p>
 
-# [Your Name]'s PhD Research Portfolio
+# Kurt Soncco Sinchi's PhD Research Portfolio
 
-Welcome! I am a PhD Candidate in the `[Your Department, e.g., Department of Electrical Engineering and Computer Sciences]` at the **University of California, Berkeley**, advised by Professor `[Advisor's Name]`.
+Welcome! I am a PhD Candidate in the `Department of Civil and Environmental ENgineering` at the **University of California, Berkeley**, advised by Professor `Mohamad Hallal`.
 
-My research, situated at the intersection of `[Field 1]` and `[Field 2]`, focuses on `[Your primary research interest, e.g., robust and interpretable machine learning, with applications in computational biology]`. This repository serves as a central portfolio connecting the various research projects I am leading or contributing to during my doctoral studies.
+My research, situated at the intersection of `Geotechnical Engineering` and `Machine Learning`, focuses on `robust surrogated earthquate physical simulators and probabilsitic spatial correlated generation of site analysis`. This repository serves as a central portfolio connecting the various research projects I am leading or contributing to during my doctoral studies, as well as collaboration I have been part of!
 
 <p align="center">
   <a href="[LINK_TO_YOUR_PERSONAL_WEBSITE]"><img src="https://img.shields.io/badge/Website-3b5998?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"></a>

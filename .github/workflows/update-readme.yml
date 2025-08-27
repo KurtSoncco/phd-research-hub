@@ -33,6 +33,7 @@ jobs:
 
       # 4. Runs the Python script to update the README
       - name: Update README with project list
+        shell: python
         run: |
           import yaml
 

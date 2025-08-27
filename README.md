@@ -1,9 +1,3 @@
-
-| Project | Description | Status | Publication / Preprint | Repository |
-|---|---|---|---|---|
-| **Scalable Gaussian Processes** | A new variational inference method for scaling GPs to massive datasets. | `Published` | [NeurIPS 2025](https://link-to-paper.com) | [Link](https://github.com/your-user/project-gps) |
-| **Genomic Data Analysis Pipeline** | A reproducible Snakemake pipeline for differential expression analysis. | `In Progress` | _Preprint pending_ | [Link](https://github.com/your-user/project-rna) |
-
 <p align="center">
   <img src="misc/LinkedIn-cover-01-1.jpg" width="1000" alt="Banner Image">
 </p>

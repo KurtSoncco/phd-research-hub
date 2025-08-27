@@ -1,0 +1,13 @@
+- title: "Scalable Gaussian Processes"
+  description: "A new variational inference method for scaling GPs to massive datasets."
+  status: "Published"
+  publication_url: "https://link-to-paper.com"
+  publication_text: "NeurIPS 2025"
+  repo_url: "https://github.com/your-user/project-gps"
+
+- title: "Genomic Data Analysis Pipeline"
+  description: "A reproducible Snakemake pipeline for differential expression analysis."
+  status: "In Progress"
+  publication_url: ""
+  publication_text: "_Preprint pending_"
+  repo_url: "https://github.com/your-user/project-rna"

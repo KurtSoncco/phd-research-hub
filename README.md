@@ -18,13 +18,9 @@ My research, situated at the intersection of `Geotechnical Engineering` and `Mac
 
 ## Interactive Research Projects
 
-My full, interactive list of research projects is available on my portfolio page, hosted with GitHub Pages. You can sort, search, and filter the table to easily explore my work.
+My full list of research projects is below.
 
-<p align="center">
-  <a href="https://KurtSoncco.github.io/phd-research-hub/">
-    <img src="https://img.shields.io/badge/View_Interactive_Portfolio-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="Interactive Portfolio">
-  </a>
-</p>
+**Your project list will be automatically inserted here on the next commit!**
 
 Each project is maintained in its own repository, which includes the source code, documentation, and (where possible) data and instructions required for reproduction, embodying my commitment to open and reproducible science.
 

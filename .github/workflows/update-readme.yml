@@ -62,9 +62,9 @@ jobs:
               readme_content = f.read()
 
           # Replace the placeholder section with the new table
-          start_tag = ""
-          end_tag = ""
-          
+          start_tag = "<!-- PROJECT_LIST -->"
+          end_tag = "<!-- END_PROJECT_LIST -->"
+
           start_index = readme_content.find(start_tag)
           end_index = readme_content.find(end_tag)
 

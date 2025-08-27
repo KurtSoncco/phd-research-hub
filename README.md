@@ -20,7 +20,9 @@ My research, situated at the intersection of `Geotechnical Engineering` and `Mac
 
 My full list of research projects is below.
 
-**Your project list will be automatically inserted here on the next commit!**
+<!-- PROJECT_LIST -->
+
+<!-- END_PROJECT_LIST -->
 
 Each project is maintained in its own repository, which includes the source code, documentation, and (where possible) data and instructions required for reproduction, embodying my commitment to open and reproducible science.
 

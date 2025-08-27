@@ -1,0 +1,83 @@
+# Name of the GitHub Action
+name: Update README Projects List
+
+# Controls when the action will run
+on:
+  # Triggers the workflow on push events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # 1. Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # 2. Sets up Python environment
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      
+      # 3. Installs the PyYAML library needed to read the .yml file
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      # 4. Runs the Python script to update the README
+      - name: Update README with project list
+        run: |
+          import yaml
+
+          # Read the list of projects from the YAML file
+          with open("pyprojects.yml", "r") as f:
+              projects = yaml.safe_load(f)
+
+          # Start building the Markdown table
+          markdown_table = "| Project | Description | Status | Publication / Preprint | Repository |\n"
+          markdown_table += "|---|---|---|---|---|\n"
+
+          # Add a row for each project
+          for project in projects:
+              repo = f"[Link]({project['repo_url']})"
+              # Make publication a link if URL is provided, otherwise just text
+              publication = f"[{project['publication_text']}]({project['publication_url']})" if project.get('publication_url') else project.get('publication_text', 'N/A')
+              
+              row = f"| **{project['title']}** | {project['description']} | `{project['status']}` | {publication} | {repo} |\n"
+              markdown_table += row
+
+          # Read the current README
+          with open("README.md", "r") as f:
+              readme_content = f.read()
+
+          # Replace the placeholder section with the new table
+          start_tag = ""
+          end_tag = ""
+          
+          start_index = readme_content.find(start_tag)
+          end_index = readme_content.find(end_tag)
+
+          if start_index != -1 and end_index != -1:
+              before = readme_content[:start_index + len(start_tag)]
+              after = readme_content[end_index:]
+              new_readme = f"{before}\n{markdown_table}\n{after}"
+              
+              with open("README.md", "w") as f:
+                  f.write(new_readme)
+              print("README.md updated successfully.")
+          else:
+              print("Placeholder tags not found in README.md.")
+
+      # 5. Commits the changes to the README.md file
+      - name: Commit and push if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: auto-update projects list in README"
+          file_pattern: README.md

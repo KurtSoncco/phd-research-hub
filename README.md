@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="LinkedIn-cover-01-1.jpg" width="1000" alt="Banner Image">
+  <img src="misc/LinkedIn-cover-01-1.jpg" width="1000" alt="Banner Image">
 </p>
 
 # Kurt Soncco Sinchi's PhD Research Portfolio

@@ -24,7 +24,8 @@ My full list of research projects is below.
 | Project | Description | Status | Publication / Preprint | Repository |
 |---|---|---|---|---|
 | **Generative AI application for Vs profile generation** | Study of Generative models and algortihms for generation of Vs profiles, conditional on real measurements | `In Progress` | _Preprint pending_ | [Link](https://github.com/KurtSoncco/gen-ai-soil-profiles.git) |
-| **Liquefaction definition by AI-generated relations** | An study of symbolic regression approach for Liquefaction data | `In Progress` | _Preprint pending_ | [Link](https://github.com/your-user/project-rna) |
+| **Liquefaction definition by AI-generated relations** | An study of symbolic regression approach for Liquefaction data | `In Progress` | _Preprint pending_ | [Link](https://github.com/KurtSoncco/symbolic-ai-liquefaction) |
+| **Surrogated Wave Propragation model by Operator Learning** | An study of surroagte physics model of elastic wave propagation into layered medium | `In Progress` | _Preprint pending_ | [Link](https://github.com/KurtSoncco/surrogate-seismic-waves) |
 
 <!-- END_PROJECT_LIST -->
 

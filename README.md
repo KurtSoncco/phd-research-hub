@@ -10,8 +10,9 @@ My research, situated at the intersection of `Geotechnical Engineering` and `Mac
 
 <p align="center">
   <a href="https://scholar.google.com/citations?user=X4Zw3cEAAAAJ&hl=en&authuser=1"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar"></a>
-  <a href="https://www.linkedin.com/in/kurtsonccosinchi/">
-  <img src="https://badgen.net/badge/icon/LinkedIn?icon=linkedin&label&color=0077B5" alt="LinkedIn">
+  <a href="https://www.linkedin.com/in/kurtsonccosinchi/" style="text-decoration: none; color: #0077B5; font-family: sans-serif; font-weight: bold;">
+  <img height="28" src="https://cdn.simpleicons.org/linkedin/0077B5" alt="LinkedIn Logo" />
+  LinkedIn
 </a>
   <a href="mailto:kurtwal98@berkeley.edu"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
 </p>

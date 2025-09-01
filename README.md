@@ -23,8 +23,8 @@ My full list of research projects is below.
 <!-- PROJECT_LIST -->
 | Project | Description | Status | Publication / Preprint | Repository |
 |---|---|---|---|---|
-| **Scalable Gaussian Processes** | A new variational inference method for scaling GPs to massive datasets. | `Published` | [NeurIPS 2025](https://link-to-paper.com) | [Link](https://github.com/your-user/project-gps) |
-| **Genomic Data Analysis Pipeline** | A reproducible Snakemake pipeline for differential expression analysis. | `In Progress` | _Preprint pending_ | [Link](https://github.com/your-user/project-rna) |
+| **Generative AI application for Vs profile generation** | Study of Generative models and algortihms for generation of Vs profiles, conditional on real measurements | `In Progress` | _Preprint pending_ | [Link](https://github.com/KurtSoncco/gen-ai-soil-profiles.git) |
+| **Liquefaction definition by AI-generated relations** | An study of symbolic regression approach for Liquefaction data | `In Progress` | _Preprint pending_ | [Link](https://github.com/your-user/project-rna) |
 
 <!-- END_PROJECT_LIST -->
 

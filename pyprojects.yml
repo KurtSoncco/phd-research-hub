@@ -1,5 +1,5 @@
 - title: "Generative AI application for Vs profile generation"
-  description: "Study of Generative models and algortihms for generation of Vs profiles, conditional on real measurements"
+  description: "Study of Generative models and algorithms for generation of Vs profiles, conditional on real measurements"
   status: "In Progress"
   publication_url: ""
   publication_text: "_Preprint pending_"
@@ -13,7 +13,7 @@
   repo_url: "https://github.com/KurtSoncco/symbolic-ai-liquefaction"
 
 - title: "Surrogated Wave Propragation model by Operator Learning"
-  description: "An study of surroagte physics model of elastic wave propagation into layered medium"
+  description: "An study of surrogate physics model of elastic wave propagation into layered medium"
   status: "In Progress"
   publication_url: ""
   publication_text: "_Preprint pending_"

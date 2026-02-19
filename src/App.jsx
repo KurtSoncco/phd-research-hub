@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import Research from './pages/Research';
 import Projects from './pages/Projects';
+import Experience from './pages/Experience';
 import Teaching from './pages/Teaching';
 import About from './pages/About';
 
@@ -14,6 +15,7 @@ function App() {
                     <Route index element={<Home />} />
                     <Route path="research" element={<Research />} />
                     <Route path="projects" element={<Projects />} />
+                    <Route path="experience" element={<Experience />} />
                     <Route path="teaching" element={<Teaching />} />
                     <Route path="about" element={<About />} />
                 </Route>

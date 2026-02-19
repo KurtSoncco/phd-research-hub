@@ -10,6 +10,7 @@ const Layout = () => {
         { name: 'Home', path: '/' },
         { name: 'Research', path: '/research' },
         { name: 'Projects', path: '/projects' },
+        { name: 'Experience', path: '/experience' },
         { name: 'Teaching', path: '/teaching' },
         { name: 'About', path: '/about' },
     ];
@@ -39,8 +40,8 @@ const Layout = () => {
                                         key={item.name}
                                         to={item.path}
                                         className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${isActive(item.path)
-                                                ? 'bg-slate-800 text-blue-400'
-                                                : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+                                            ? 'bg-slate-800 text-blue-400'
+                                            : 'text-slate-300 hover:bg-slate-800 hover:text-white'
                                             }`}
                                     >
                                         {item.name}
@@ -72,8 +73,8 @@ const Layout = () => {
                                     to={item.path}
                                     onClick={() => setIsMenuOpen(false)}
                                     className={`block px-3 py-2 rounded-md text-base font-medium ${isActive(item.path)
-                                            ? 'bg-slate-800 text-blue-400'
-                                            : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+                                        ? 'bg-slate-800 text-blue-400'
+                                        : 'text-slate-300 hover:bg-slate-800 hover:text-white'
                                         }`}
                                 >
                                     {item.name}

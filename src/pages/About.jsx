@@ -6,10 +6,14 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                 {/* Sidebar Info */}
                 <div className="space-y-8">
-                    <div className="aspect-square rounded-2xl overflow-hidden bg-slate-800 border border-slate-700">
-                        {/* Placeholder for profile image */}
-                        <div className="w-full h-full flex items-center justify-center bg-slate-800 text-slate-600">
-                            <span className="text-sm">Profile Image</span>
+                    <div className="aspect-square rounded-2xl overflow-hidden bg-slate-800 border border-slate-700 relative group">
+                        <img
+                            src={`${import.meta.env.BASE_URL}images/cover.jpg`}
+                            alt="Kurt Soncco Sinchi"
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
+                            <span className="text-white font-medium">Download CV</span>
                         </div>
                     </div>
 

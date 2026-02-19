@@ -58,40 +58,66 @@ const Research = () => {
 
                     <div className="space-y-6">
                         <div className="bg-slate-800/30 rounded-xl p-6 border border-slate-700 hover:border-blue-500/30 transition-colors">
-                            <h3 className="text-lg font-bold text-white mb-3">Indexed Journals</h3>
-                            <ul className="space-y-3 text-slate-300 list-disc pl-4 marker:text-blue-500">
-                                <li>
-                                    <span>Research on "Bending analysis of Micropolar Beams"</span>
+                            <h3 className="text-lg font-bold text-white mb-3">Journal Publications</h3>
+                            <ul className="space-y-4 text-slate-300 list-none">
+                                <li className="flex gap-3">
+                                    <span className="text-teal-400 font-mono text-sm mt-1">2021</span>
+                                    <div>
+                                        <p className="leading-relaxed">
+                                            <strong className="text-white">Soncco, K.</strong>, et al. "Postbuckling analysis of nonlocal functionally graded beams," <em className="text-slate-400">Latin American Journal of Solids and Structures</em>.
+                                        </p>
+                                    </div>
                                 </li>
-                                <li>
-                                    <span>Biomass sensing using UAS-mounted radar</span>
+                                <li className="flex gap-3">
+                                    <span className="text-teal-400 font-mono text-sm mt-1">Conf.</span>
+                                    <div>
+                                        <p className="leading-relaxed">
+                                            <strong className="text-white">Soncco, K.</strong> "Post Buckling Analysis of Functionally Graded Beams," <em className="text-slate-400">IOP Conf. Series: Materials Science</em>, Korea.
+                                        </p>
+                                    </div>
                                 </li>
-                                <li className="text-slate-500 italic">
-                                    Multiple papers on post-buckling analysis (To be submitted)
+                                <li className="flex gap-3">
+                                    <span className="text-teal-400 font-mono text-sm mt-1">2020</span>
+                                    <div>
+                                        <p className="leading-relaxed">
+                                            Betancourt, KN; <strong className="text-white">Soncco, K.</strong>; Arciniega, R. "Bending and Buckling of Micropolar Beams," <em className="text-slate-400">LACCEI 2020/ICBMM</em>.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li className="flex gap-3">
+                                    <span className="text-teal-400 font-mono text-sm mt-1">2023</span>
+                                    <div>
+                                        <p className="leading-relaxed">
+                                            Sinchi, K.S., et al. "Under-Canopy Biomass Sensing using UAS-Mounted Radar," <em className="text-slate-400">IEEE IGARSS 2023</em>.
+                                        </p>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
 
                         <div className="bg-slate-800/30 rounded-xl p-6 border border-slate-700 hover:border-blue-500/30 transition-colors">
-                            <h3 className="text-lg font-bold text-white mb-3">Conference Papers</h3>
-                            <ul className="space-y-2 text-slate-300">
-                                <li className="flex gap-2">
-                                    <span className="text-blue-400 font-mono text-sm">2023</span>
-                                    <span>IEEE Presentation</span>
+                            <h3 className="text-lg font-bold text-white mb-3">Selected Presentations</h3>
+                            <ul className="space-y-4 text-slate-300">
+                                <li className="flex gap-3 items-start">
+                                    <div className="bg-blue-900/40 text-blue-300 px-2 py-0.5 rounded text-xs font-semibold uppercase tracking-wide mt-1">Keynote</div>
+                                    <div>
+                                        <p className="font-medium text-white">"From Complexity to Efficiency: Site Response Simulations with ML"</p>
+                                        <p className="text-sm text-slate-500">GEOWEEK 2025</p>
+                                    </div>
                                 </li>
-                                <li className="flex gap-2">
-                                    <span className="text-blue-400 font-mono text-sm">2020</span>
-                                    <span>ASAEE Presentation</span>
+                                <li className="flex gap-3 items-start">
+                                    <div className="bg-emerald-900/40 text-emerald-300 px-2 py-0.5 rounded text-xs font-semibold uppercase tracking-wide mt-1">Invited</div>
+                                    <div>
+                                        <p className="font-medium text-white">"Practical Use of AI in Construction Projects"</p>
+                                        <p className="text-sm text-slate-500">HLC SAC Forum, Lima (2025)</p>
+                                    </div>
                                 </li>
-                            </ul>
-                        </div>
-
-                        <div className="bg-slate-800/30 rounded-xl p-6 border border-slate-700 hover:border-blue-500/30 transition-colors">
-                            <h3 className="text-lg font-bold text-white mb-3">Invited Talks</h3>
-                            <ul className="space-y-2 text-slate-300">
-                                <li>
-                                    <p className="font-medium">New structural engineering technologies and international experiences</p>
-                                    <p className="text-sm text-slate-500">UPC, Lima (2023)</p>
+                                <li className="flex gap-3 items-start">
+                                    <div className="bg-slate-700/40 text-slate-300 px-2 py-0.5 rounded text-xs font-semibold uppercase tracking-wide mt-1">Talk</div>
+                                    <div>
+                                        <p className="font-medium text-white">New structural engineering technologies and international experiences</p>
+                                        <p className="text-sm text-slate-500">UPC, Lima (2023)</p>
+                                    </div>
                                 </li>
                             </ul>
                         </div>

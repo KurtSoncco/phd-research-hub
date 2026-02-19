@@ -64,13 +64,12 @@ const About = () => {
                                 <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-900 border-2 border-slate-700 group-hover:border-blue-500 transition-colors" />
                                 <div className="flex justify-between items-start flex-wrap gap-2">
                                     <h3 className="text-xl font-bold text-white">University of California, Berkeley</h3>
-                                    <span className="text-teal-400 font-mono text-sm">May 2028 (Expected)</span>
+                                    <span className="text-teal-400 font-mono text-sm">Expected May 2028</span>
                                 </div>
-                                <p className="text-lg text-slate-300">PhD in Civil Engineering</p>
-                                <p className="text-sm text-slate-500 mb-2">Major: Geosystems Engineering</p>
-                                <div className="text-slate-400 text-sm space-y-1 bg-slate-800/30 p-3 rounded-lg">
-                                    <p>• <span className="text-slate-300">GPA:</span> 4.00/4.00</p>
-                                    <p>• <span className="text-slate-300">Minor:</span> Structural Engineering, High Computing and Data Science Applications</p>
+                                <p className="text-lg text-slate-300">PhD in Civil Engineering (Geosystems)</p>
+                                <div className="text-slate-400 text-sm space-y-1 bg-slate-800/30 p-3 rounded-lg mt-2 border border-slate-700/50">
+                                    <p>• <span className="text-slate-300">GPA:</span> 3.89/4.00</p>
+                                    <p>• <span className="text-slate-300">Minors:</span> Structural Engineering, High Computing, and Data Science Applications</p>
                                 </div>
                             </div>
 
@@ -81,9 +80,9 @@ const About = () => {
                                     <h3 className="text-xl font-bold text-white">University of Illinois Urbana-Champaign</h3>
                                     <span className="text-slate-500 font-mono text-sm">May 2023</span>
                                 </div>
-                                <p className="text-lg text-slate-300">Master's in Science in Structural Engineering</p>
-                                <div className="text-slate-400 text-sm space-y-1 bg-slate-800/30 p-3 rounded-lg mt-2">
-                                    <p>• <span className="text-slate-300">GPA:</span> 4.00/4.00</p>
+                                <p className="text-lg text-slate-300">MS in Structural Engineering</p>
+                                <div className="text-slate-400 text-sm space-y-1 bg-slate-800/30 p-3 rounded-lg mt-2 border border-slate-700/50">
+                                    <p>• <span className="text-slate-300">GPA:</span> 3.79/4.00</p>
                                     <p>• <span className="text-slate-300">Minor:</span> Data Science</p>
                                 </div>
                             </div>
@@ -95,8 +94,8 @@ const About = () => {
                                     <h3 className="text-xl font-bold text-white">Universidad Peruana de Ciencias Aplicadas (UPC)</h3>
                                     <span className="text-slate-500 font-mono text-sm">May 2018</span>
                                 </div>
-                                <p className="text-lg text-slate-300">Bachelor of Science in Civil Engineering</p>
-                                <div className="text-slate-400 text-sm space-y-1 bg-slate-800/30 p-3 rounded-lg mt-2">
+                                <p className="text-lg text-slate-300">BS in Civil Engineering</p>
+                                <div className="text-slate-400 text-sm space-y-1 bg-slate-800/30 p-3 rounded-lg mt-2 border border-slate-700/50">
                                     <p>• <span className="text-slate-300">GPA:</span> 16.55/20.00</p>
                                 </div>
                             </div>
@@ -108,13 +107,14 @@ const About = () => {
                         <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Technical Skills</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {[
-                                { category: "Programming", skills: "Python, MATLAB, C++, LaTeX, SQL" },
-                                { category: "Structural", skills: "ETABS, SAP 2000, Robot Structural, RISA 3D, ABAQUS, ANSYS, CYPE" },
-                                { category: "Geotechnical", skills: "PLAXIS 3D/2D, SLOPE W, DeepSoil, FLAC2D/3D" },
-                                { category: "BIM & Tools", skills: "AutoCAD, Revit, Dynamo, Civil 3D, MathCad, Navisworks, Power BI" },
-                                { category: "Languages", skills: "Spanish, English, French, Quechua" }
+                                { category: "Programming", skills: "Python (SFT, Agents), MATLAB, C++, SQL, LaTeX" },
+                                { category: "AI & HPC", skills: "Gemini Coding Agents, LangGraph (RAG), GNNs, Savio HPC (Parallel OpenSees)" },
+                                { category: "Structural Apps", skills: "ABAQUS, ANSYS, ETABS, SAP2000, Robot Structural, RISA 3D, CYPE" },
+                                { category: "Geotech Apps", skills: "PLAXIS 3D/2D, FLAC3D/2D, SLOPE W, DeepSoil" },
+                                { category: "Engineering/BIM", skills: "Revit, Dynamo, Civil 3D, Navisworks, Power BI, Power Query, Autodesk Cloud" },
+                                { category: "Languages", skills: "Spanish (Native), English (Fluent), French, Quechua" }
                             ].map((item, idx) => (
-                                <div key={idx} className="bg-slate-800/50 p-4 rounded-xl border border-slate-700 hover:border-teal-500/50 transition-colors">
+                                <div key={idx} className="bg-slate-800/50 p-4 rounded-xl border border-slate-700 hover:border-teal-500/50 transition-colors hover:bg-slate-800/80">
                                     <h4 className="text-sm uppercase tracking-wider text-teal-400 font-semibold mb-2">{item.category}</h4>
                                     <p className="text-slate-300 text-sm leading-relaxed">{item.skills}</p>
                                 </div>
@@ -127,17 +127,17 @@ const About = () => {
                         <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400">Leadership & Activities</h2>
                         <div className="space-y-4">
                             {[
-                                { role: "DataScience for Justice Fellow", desc: "Selected from 1,000+ applicants for an interdisciplinary LLM/data scraping project.", year: "2023–2024" },
-                                { role: "Berkeley Leadership Academy Fellow", desc: "Participated in the university's first leadership program (selected from 450 students)." },
-                                { role: "President, Peruvian Student Organization (UIUC)", desc: "Led the organization to win 'Best International Student Organization' at UIUC in 2023." },
-                                { role: "UPC Excellence Students Group", desc: "2-year Transcendent Leadership scholarship for top 10% students." },
-                                { role: "Santander Scholarships", desc: "Participated in MIT Professional Education programs for 'Leading Innovation' and 'Machine Learning'." }
+                                { role: "Fellow, Data Science for Justice", desc: "Selected (1/1000+) for interdisciplinary LLM data scraping projects.", year: "2024" },
+                                { role: "Fellow, Berkeley Leadership Academy", desc: "Selected (1/450) for UCB's inaugural leadership program.", year: "2024" },
+                                { role: "President, Peruvian Student Org (UIUC)", desc: "Won Best International Org 2023; led cultural and culinary events." },
+                                { role: "UPC Excellence Students Program", desc: "2-year Transcendent Leadership scholarship (Top 10% of university)." },
+                                { role: "MIT Leading Innovation Program", desc: "Completed MIT Professional Education in ML and innovation frameworks." }
                             ].map((item, idx) => (
-                                <div key={idx} className="flex gap-4 items-start group">
-                                    <div className="mt-1.5 w-2 h-2 rounded-full bg-emerald-400 group-hover:scale-150 transition-transform" />
+                                <div key={idx} className="flex gap-4 items-start group bg-slate-800/30 p-4 rounded-xl border border-slate-700/50 hover:border-emerald-500/50 transition-all hover:bg-slate-800/50">
+                                    <div className="mt-1.5 w-2 h-2 rounded-full bg-emerald-400 group-hover:scale-150 transition-transform shadow-[0_0_10px_rgba(52,211,153,0.5)]" />
                                     <div>
-                                        <h4 className="font-semibold text-white">{item.role} <span className="text-slate-500 text-sm font-normal">{item.year}</span></h4>
-                                        <p className="text-slate-400 text-sm">{item.desc}</p>
+                                        <h4 className="font-semibold text-white group-hover:text-emerald-300 transition-colors">{item.role} <span className="text-slate-500 text-sm font-normal ml-2">{item.year}</span></h4>
+                                        <p className="text-slate-400 text-sm mt-1">{item.desc}</p>
                                     </div>
                                 </div>
                             ))}

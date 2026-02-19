@@ -1,7 +1,31 @@
-import { Github, ExternalLink, Star, GitFork } from 'lucide-react';
+import { Github, ExternalLink, Star, GitFork, Trophy, Cpu, Database } from 'lucide-react';
 
 const Projects = () => {
     const projects = [
+        {
+            title: "GNN Framework for Inverse Structural Design",
+            desc: "Won 1st Place at NHERI 2024 Hackathon (TACC). A Graph Neural Network framework for optimizing structural designs.",
+            tags: ["Python", "GNN", "Structural Optimization", "Hackathon Winner"],
+            repo: "https://github.com/KurtSoncco", // Placeholder if no specific repo provided
+            status: "Completed",
+            icon: <Trophy className="text-yellow-400" size={20} />
+        },
+        {
+            title: "MechGAIA-AgentBeats",
+            desc: "Agentic implementation of the MechGAIA structural framework. Automating structural analysis workflows using AI agents.",
+            tags: ["AI Agents", "Python", "Structural Engineering"],
+            repo: "https://github.com/KurtSoncco",
+            status: "In Progress",
+            icon: <Cpu className="text-teal-400" size={20} />
+        },
+        {
+            title: "LLM-based Concrete Mix Design",
+            desc: "Small-to-medium local LLM development for specialized concrete design optimization. Poster presented in Spring Machine Learning School by YuyayAI Lab mentees.",
+            tags: ["LLM", "Materials Science", "Optimization"],
+            repo: "https://github.com/KurtSoncco",
+            status: "Completed",
+            icon: <Database className="text-blue-400" size={20} />
+        },
         {
             title: "Generative AI for Vs profiles",
             desc: "Study of Generative models and algorithms for generation of Vs profiles, conditional on real measurements.",
@@ -28,9 +52,9 @@ const Projects = () => {
     return (
         <div className="space-y-12 animate-in fade-in duration-700">
             <header className="space-y-4 border-b border-slate-800 pb-8">
-                <h1 className="text-4xl font-bold text-white">Projects</h1>
+                <h1 className="text-4xl font-bold text-white">Technical Projects</h1>
                 <p className="text-xl text-slate-400 max-w-3xl">
-                    Open-source implementations of my research and other experimental projects.
+                    Open-source implementations, hackathon wins, and experimental AI projects.
                 </p>
             </header>
 
@@ -39,10 +63,14 @@ const Projects = () => {
                     <div key={idx} className="flex flex-col h-full bg-slate-800/50 border border-slate-700 rounded-2xl overflow-hidden hover:border-slate-500 transition-all hover:shadow-lg hover:shadow-blue-900/10 group">
                         <div className="p-6 flex-grow space-y-4">
                             <div className="flex justify-between items-start">
-                                <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                                <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors flex items-center gap-2">
+                                    {project.icon}
                                     {project.title}
                                 </h3>
-                                <span className="px-2 py-1 text-xs rounded-full bg-slate-700 text-slate-300 border border-slate-600">
+                                <span className={`px-2 py-1 text-xs rounded-full border ${project.status === 'Completed'
+                                        ? 'bg-emerald-900/30 text-emerald-400 border-emerald-900/50'
+                                        : 'bg-slate-700 text-slate-300 border-slate-600'
+                                    }`}>
                                     {project.status}
                                 </span>
                             </div>

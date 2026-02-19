@@ -118,21 +118,23 @@ const Experience = () => {
                                     <h3 className="text-xl font-bold text-white group-hover:text-teal-400 transition-colors">
                                         {exp.role}
                                     </h3>
-                                    <div className="text-lg text-blue-400 font-medium flex items-center gap-3">
+                                    <div className="text-lg text-blue-400 font-medium flex items-center gap-4">
                                         {/* Logo or Icon */}
-                                        <div className="w-8 h-8 rounded bg-slate-800 flex items-center justify-center overflow-hidden shrink-0 border border-slate-700">
+                                        <div className="w-16 h-16 rounded-xl bg-white/5 flex items-center justify-center overflow-hidden shrink-0 border border-slate-700/50 p-2 group-hover:border-teal-500/30 transition-colors bg-white">
                                             <img
                                                 src={getLogoPath(exp.company)}
                                                 onError={(e) => {
                                                     e.target.onerror = null;
                                                     e.target.style.display = 'none'; // Hide broken image
+                                                    e.target.parentElement.classList.add('bg-slate-800'); // Revert bg for icon
+                                                    e.target.parentElement.classList.remove('bg-white');
                                                     e.target.nextSibling.style.display = 'flex'; // Show fallback icon
                                                 }}
                                                 alt={`${exp.company} logo`}
-                                                className="w-full h-full object-contain p-1"
+                                                className="w-full h-full object-contain"
                                             />
                                             <div className="hidden w-full h-full items-center justify-center text-slate-500">
-                                                <Building2 size={16} />
+                                                <Building2 size={24} />
                                             </div>
                                         </div>
                                         {exp.company}

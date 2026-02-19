@@ -94,7 +94,7 @@ const Experience = () => {
     const getLogoPath = (companyName) => {
         // e.g., "University of California, Berkeley" -> "university_of_california_berkeley.png"
         const filename = companyName.toLowerCase().replace(/[^a-z0-9]/g, '_').replace(/_+/g, '_');
-        return `${import.meta.env.BASE_URL}images/logos/${filename}.png`;
+        return `${import.meta.env.BASE_URL}images/${filename}.png`;
     };
 
     return (
@@ -104,17 +104,6 @@ const Experience = () => {
                 <p className="text-xl text-slate-400 max-w-3xl">
                     My professional journey in research, AI, and engineering.
                 </p>
-                <div className="bg-blue-900/20 border border-blue-900/50 p-4 rounded-lg text-sm text-blue-200">
-                    <p className="font-semibold mb-1">Note to User (Self):</p>
-                    <p>To add logos, upload PNG images to <code>public/images/logos/</code> using the following naming convention:</p>
-                    <ul className="list-disc list-inside mt-2 text-blue-300/80 font-mono text-xs">
-                        <li>x_the_moonshot_factory.png</li>
-                        <li>university_of_california_berkeley.png</li>
-                        <li>university_of_illinois_urbana_champaign.png</li>
-                        <li>ks_distribuciones.png</li>
-                        <li>(etc...)</li>
-                    </ul>
-                </div>
             </header>
 
             <div className="relative border-l border-slate-800 ml-3 md:ml-6 space-y-12">

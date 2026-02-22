@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,9 +10,19 @@
   font-weight: 400;
 
   color-scheme: dark;
-  --primary-gradient: linear-gradient(135deg, #60a5fa 0%, #2dd4bf 50%, #34d399 100%);
-  --glass-bg: rgba(30, 41, 59, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
+
+  /* Andean Color Palette */
+  --terracotta: #c25b3f;
+  --terracotta-light: #e07a5f;
+  --gold: #d4a017;
+  --gold-light: #f0c040;
+  --andean-indigo: #3b2f6e;
+  --mountain: #2d5a3d;
+
+  --primary-gradient: linear-gradient(135deg, #c25b3f 0%, #d4a017 50%, #2d5a3d 100%);
+  --andean-warm: linear-gradient(135deg, #8c3a25 0%, #3b2f6e 100%);
+  --glass-bg: rgba(20, 14, 8, 0.72);
+  --glass-border: rgba(212, 160, 23, 0.15);
 }
 
 html {
@@ -23,36 +33,50 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #0f172a;
-  /* slate-900 */
+  background-color: #130d06;
   background-image:
-    radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.1) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, rgba(45, 212, 191, 0.1) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(52, 211, 153, 0.1) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, rgba(194, 91, 63, 0.12) 0px, transparent 55%),
+    radial-gradient(at 100% 0%, rgba(59, 47, 110, 0.12) 0px, transparent 55%),
+    radial-gradient(at 50% 100%, rgba(45, 90, 61, 0.10) 0px, transparent 55%),
+    radial-gradient(at 100% 100%, rgba(212, 160, 23, 0.07) 0px, transparent 50%);
   background-attachment: fixed;
-  color: #f1f5f9;
-  /* slate-100 */
+  color: #f5f0eb;
+}
+
+/* Chakana (Andean Cross) subtle background pattern */
+.chakana-bg {
+  position: relative;
+}
+
+.chakana-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23d4a017' stroke-width='0.4' opacity='0.08'%3E%3Crect x='20' y='0' width='20' height='60'/%3E%3Crect x='0' y='20' width='60' height='20'/%3E%3Crect x='20' y='20' width='20' height='20' fill='%23d4a017' opacity='0.05'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  pointer-events: none;
+  border-radius: inherit;
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f172a;
+  background: #130d06;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #334155;
+  background: #3b2f6e;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  background: #c25b3f;
 }
 
-/* Animations using Tailwind defaults but adding custom classes if needed */
+/* Animations */
 .fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
   opacity: 0;
@@ -66,9 +90,86 @@ body {
   }
 }
 
+/* Glass Card — Andean Style */
 .glass-card {
   background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-border);
+}
+
+/* Andean accent card */
+.andean-card {
+  background: rgba(20, 14, 8, 0.6);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
+  border: 1px solid rgba(194, 91, 63, 0.25);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.andean-card:hover {
+  border-color: rgba(212, 160, 23, 0.5);
+  box-shadow: 0 8px 32px rgba(212, 160, 23, 0.1), 0 0 0 1px rgba(194, 91, 63, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Text gradient utility */
+.text-andean {
+  background: linear-gradient(135deg, #e07a5f 0%, #f0c040 50%, #4a8a5f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Shimmer text effect */
+.text-shimmer {
+  background: linear-gradient(90deg, #d4a017 0%, #f0c040 25%, #c25b3f 50%, #f0c040 75%, #d4a017 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* Pulse dot */
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background: #d4a017;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(212, 160, 23, 0.5);
+  animation: pulseDot 1.8s ease-in-out infinite;
+}
+
+@keyframes pulseDot {
+  0% {
+    box-shadow: 0 0 0 0 rgba(212, 160, 23, 0.5);
+  }
+
+  70% {
+    box-shadow: 0 0 0 8px rgba(212, 160, 23, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(212, 160, 23, 0);
+  }
+}
+
+/* Andes mountain divider */
+.andes-divider {
+  width: 100%;
+  height: 48px;
+  background: transparent;
+  overflow: hidden;
+  line-height: 0;
 }
